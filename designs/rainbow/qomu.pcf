@@ -1,0 +1,21 @@
+// Qomu pin constraints for the rainbow design.
+//
+// IO_x pad aliases are package independent; compiled with "-P PU64" like
+// QuickLogic's own Qomu apps. All pads below are bonded out on Qomu's WLCSP.
+//
+// Signal      Pad     WLCSP ball   Board net (qomu-board.sch)
+// red_led     IO_24   D2           LED_R, active high
+// green_led   IO_6    A6           LED_G, active high
+// blue_led    IO_30   F4           LED_B, active high
+// touch1      IO_10   B5           TOUCH_1 (touch pad 1)
+// touch2      IO_17   D1           TOUCH_2 (touch pad 2)
+// touch3      IO_0    A7           TOUCH_3 (touch pad 3)
+// touch4      IO_29   E3           TOUCH_4 (touch pad 4)
+
+set_io red_led     IO_24
+set_io green_led   IO_6
+set_io blue_led    IO_30
+set_io touch1      IO_10
+set_io touch2      IO_17
+set_io touch3      IO_0
+set_io touch4      IO_29

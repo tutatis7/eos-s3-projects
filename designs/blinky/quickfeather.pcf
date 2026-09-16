@@ -1,0 +1,12 @@
+// QuickFeather / QuickFeather Lite pin constraints for the blinky design.
+//
+// QuickFeather uses the 64-pin QFN EOS S3 ("-P PU64"); every IO_x pad is bonded out.
+//
+// Signal      Pad     QFN pin   Board net (quickfeather-board.sch)
+// red_led     IO_22   34        LED_R -> 2N7002 gate, active high
+// green_led   IO_21   39        LED_G -> 2N7002 gate, active high
+// blue_led    IO_18   38        LED_B -> 2N7002 gate, active high
+
+set_io red_led     IO_22
+set_io green_led   IO_21
+set_io blue_led    IO_18

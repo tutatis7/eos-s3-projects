@@ -1,0 +1,19 @@
+eos-s3-projects
+
+This project is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It includes material from QuickLogic Corporation's qorc-sdk
+(https://github.com/QuickLogic-Corp/qorc-sdk), also licensed under the Apache
+License, Version 2.0:
+
+- firmware/qf_hello/ is based on qorc-sdk qf_apps/qf_helloworldsw. Files taken
+  from the SDK keep their original QuickLogic copyright and license headers.
+
+The Dockerfile downloads, at build time and without redistributing them:
+- QuickLogic's SymbiFlow FPGA toolchain (quicklogic-fpga-toolchain)
+- qorc-sdk and s3-gateware (QuickLogic Corporation)
+- Arm GNU Toolchain 9-2020-q2 (Arm Limited)
+- Miniconda (Anaconda, Inc.) and packages from the quicklogic-corp conda channel
+
+flash.sh and fw_flash.sh download QuickLogic's TinyFPGA-Programmer-Application.
+Each of these is covered by its own license.

@@ -1,0 +1,17 @@
+// Qomu pin constraints.
+//
+// Qomu uses the 42-ball WLCSP EOS S3. IO_x pad aliases are package independent,
+// so this file is compiled with "-P PU64", the same flag QuickLogic uses for its
+// own Qomu apps in qorc-sdk. Every pad below is bonded out on the WLCSP.
+//
+// Signal      Pad     WLCSP ball   Notes (from qomu-board.sch)
+// red_led     IO_24   D2           LED_R -> MOSFET gate, active high
+// green_led   IO_6    A6           LED_G -> MOSFET gate, active high
+// blue_led    IO_30   F4           LED_B -> MOSFET gate, active high
+//
+// Touch pads, if you want inputs later: IO_10 (pad 1), IO_17 (pad 2),
+// IO_0 (pad 3), IO_29 (pad 4).
+
+set_io red_led     IO_24
+set_io green_led   IO_6
+set_io blue_led    IO_30
